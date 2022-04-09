@@ -2,9 +2,9 @@ import 'antd/dist/antd.css';
 import { Carousel } from 'antd';
 
 const contentStyle = {
-    height: '200px',
+    height: '350px',
     color: '#FFEEEE',
-    lineHeight: '160px',
+    lineHeight: '200px',
     textAlign: 'center',
     background: '#247881',
   };
@@ -12,7 +12,8 @@ const contentStyle = {
 function WorthBox() {
     return (
       <div className="WorthBox">
-        <Carousel effect="fade" arrows>
+      
+        <Carousel className="Carousel" effect="fade" >
             <div>
             <h3 style={contentStyle}>1</h3>
             </div>
@@ -26,6 +27,7 @@ function WorthBox() {
             <h3 style={contentStyle}>4</h3>
             </div>
         </Carousel>
+       
       </div>
     );
   }

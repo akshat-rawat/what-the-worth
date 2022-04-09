@@ -1,0 +1,26 @@
+.App {
+    min-height: 100vh;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */ 
+    /* background-color: brown; */
+}
+
+.WorthBox {
+    
+    position: relative;
+    top: 150px;
+    height: 30rem;
+    /* background-color: aqua; */
+    /* padding: 50px; */
+}
+
+.Carousel {
+    position: relative;
+    left: 20%;
+    top: 50%;
+    height: 50% ;
+    width: 500px;
+    
+}
