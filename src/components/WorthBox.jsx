@@ -15,13 +15,13 @@ function WorthBox() {
       
         <Carousel className="Carousel" effect="fade" >
             <div>
-            <h3 style={contentStyle}>1</h3>
+            <h3 style={contentStyle}>How much money we're talking here?</h3>
             </div>
             <div>
-            <h3 style={contentStyle}>2</h3>
+            <h3 style={contentStyle}>...and in which year?</h3>
             </div>
             <div>
-            <h3 style={contentStyle}>3</h3>
+            <h3 style={contentStyle}>Find it's worth in...</h3>
             </div>
             <div>
             <h3 style={contentStyle}>4</h3>
