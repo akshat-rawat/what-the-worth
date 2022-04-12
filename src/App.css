@@ -12,7 +12,7 @@
     position: relative;
     top: 150px;
     height: 30rem;
-    /* background-color: aqua; */
+    background-color: aqua;
     /* padding: 50px; */
 }
 
@@ -24,3 +24,8 @@
     width: 500px;
     
 }
+
+/* .Input {
+    border: 2px solid black;
+    border-radius: 4px;
+} */
