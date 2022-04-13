@@ -18,21 +18,21 @@ function WorthBox() {
         <Carousel className="Carousel" effect="fade" >
             <div>
               <div style={contentStyle} className="Input">
-                <h3 >How much money we're talking here?</h3>
+                <h3 style={{color: "black"}}>How much money we're talking here?</h3>
                 
-                <input type="text"></input>
+                <input className="po" type="text"></input>
               </div>
             </div>
             <div>
               <div style={contentStyle}>
                 <h3 >...and in which year?</h3>
-                <input type="text"></input>
+                <input type="text"className="po"></input>
               </div>
             </div>
             <div>
               <div style={contentStyle}>
                 <h3 >Find it's worth in...</h3>
-                <input type="text"></input>
+                <input type="text" className="po"></input>
               </div>
             </div>
             <div>

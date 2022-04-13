@@ -12,7 +12,7 @@
     position: relative;
     top: 150px;
     height: 30rem;
-    background-color: aqua;
+    /* background-color: aqua; */
     /* padding: 50px; */
 }
 
@@ -29,3 +29,11 @@
     border: 2px solid black;
     border-radius: 4px;
 } */
+
+.po {
+    height: 35px;
+    width: 250px;
+    border: 2px solid #73AD21;
+    border-radius: 25px;
+    padding: 20px;
+}
