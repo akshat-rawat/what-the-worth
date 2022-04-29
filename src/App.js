@@ -4,7 +4,7 @@ import WorthBox from './components/WorthBox';
 function App() {
   return (
     <div className="App">
-        <WorthBox />
+      <WorthBox />
     </div>
   );
 }
