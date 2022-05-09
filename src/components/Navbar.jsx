@@ -1,7 +1,7 @@
 function Navbar() {
     return (
         <div className="Navbar">
-            <p > What The Worth?</p>
+            <p> What The Worth?</p>
         </div>
     );
 };

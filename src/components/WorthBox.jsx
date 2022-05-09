@@ -1,6 +1,12 @@
 import { useRef } from 'react';
 import 'antd/dist/antd.css';
 import { Carousel } from 'antd';
+import { useState } from 'react';
+
+
+
+  
+
 
 
 const contentStyle = {
@@ -13,6 +19,13 @@ const contentStyle = {
 };
 
 function WorthBox() {
+  const [money, setMoney] = useState(''); 
+
+  function getMoney(event) {
+  setMoney(event.target.value);
+  console.log(event.target.value);
+  }
+
   const slider = useRef(null);
 
   const handleKeyDown = (event) => {
@@ -28,7 +41,7 @@ function WorthBox() {
         <div>
           <div style={contentStyle} className="Input">
             <h3>How much money we're talking here?</h3>
-            <input className="po" type="text" onKeyDown={handleKeyDown}></input>
+            <input className="po" type="text" onKeyDown={handleKeyDown} onChange={getMoney} value={money} ></input>
           </div>
         </div>
         <div>
