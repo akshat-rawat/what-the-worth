@@ -32,3 +32,11 @@
     padding: 20px;
     text-align: center;
 }
+
+.Navbar {
+    padding-top: 16px;
+    text-align: center;
+    color: #73AD21;
+    background-color: aqua;
+    height: 60px;
+}
