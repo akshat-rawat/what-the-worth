@@ -3,12 +3,6 @@ import 'antd/dist/antd.css';
 import { Carousel } from 'antd';
 import { useState } from 'react';
 
-
-
-  
-
-
-
 const contentStyle = {
   height: '350px',
   width: '500px',
