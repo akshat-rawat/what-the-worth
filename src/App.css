@@ -1,18 +1,13 @@
 .App {
     min-height: 100vh;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
-    /* background-color: brown; */
+    background-color: #f6e4d6;
 }
 
 .WorthBox {
     position: relative;
     top: 150px;
-    height: 30rem;
-    /* background-color: aqua; */
-    /* padding: 50px; */
+    height: 28rem;
+    background-color: #f6e4d6;
 }
 
 .Carousel {
@@ -21,7 +16,6 @@
     top: 50%;
     height: 50%;
     width: 500px;
-
 }
 
 .po {
@@ -34,9 +28,16 @@
 }
 
 .Navbar {
-    padding-top: 16px;
+    padding-top: 27px;
     text-align: center;
-    color: #73AD21;
-    background-color: aqua;
-    height: 60px;
+    color: black;
+    background-color: #f6e4d6;
+    height: 80px;
+}
+
+.logo {
+    height: 250px;
+    position: relative;
+    top: -110px;
+    padding-top: 0px;
 }

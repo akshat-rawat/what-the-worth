@@ -1,7 +1,13 @@
+import wtw from "../static/wtw.svg";
+
 function Navbar() {
     return (
         <div className="Navbar">
-            <p> What The Worth?</p>
+            <header>
+            
+            <img src={wtw} className='logo' />
+            
+            </header>
         </div>
     );
 };
