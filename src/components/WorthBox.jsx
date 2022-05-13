@@ -2,6 +2,7 @@ import 'antd/dist/antd.css';
 import { Carousel } from 'antd';
 import { useState } from 'react';
 import { useRef } from 'react';
+import API from '../services/inflation';
 
 
 const contentStyle = {
@@ -14,7 +15,7 @@ const contentStyle = {
 
 function WorthBox() {
   //1st slide of carousel (input)
-  const [money, setMoney] = useState(''); 
+  const [money, setMoney] = useState('');
 
   function getMoney(event) {
     setMoney(event.target.value);
@@ -41,8 +42,23 @@ function WorthBox() {
 
   const handleKeyDown = (event) => {
     if (event.key === 'Enter') {
+      if (event.target.id === 'last') calculateInflation();
       slider.current.next();
+      inputRef.current && inputRef.current.focus()
     }
+  }
+
+  const inputRef = useRef();
+
+  const [inflatedAmount, setInflatedAmount] = useState();
+
+  const calculateInflation = () => {
+    const data = {
+      start: year + '/01/01',
+      end: final + '/01/01',
+      amount: money
+    }
+    API.calculateInflation(data, setInflatedAmount);
   }
 
   return (
@@ -57,22 +73,23 @@ function WorthBox() {
         <div>
           <div style={contentStyle}>
             <h3>...and in which year?</h3>
-            <input autoFocus type="text" className="po" onKeyDown={handleKeyDown} onChange={getYear} value={year}></input>
+            <input
+              ref={inputRef} type="text" className="po" onKeyDown={handleKeyDown} onChange={getYear} value={year}></input>
           </div>
         </div>
         <div>
           <div style={contentStyle}>
             <h3 >Find it's worth in...</h3>
-            <input type="text" className="po" onKeyDown={handleKeyDown} onChange={getFinalYear} value={final}></input>
+            <input id="last" type="text" className="po" onKeyDown={handleKeyDown} onChange={getFinalYear} value={final}></input>
           </div>
         </div>
         <div>
           <div style={contentStyle}>
-            <h3 style={contentStyle}>4</h3>
+            <h1>{inflatedAmount}</h1>
           </div>
         </div>
       </Carousel>
-  </div>
+    </div>
   );
 }
 

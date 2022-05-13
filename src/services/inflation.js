@@ -6,9 +6,9 @@ const inflationURL = 'http://www.statbureau.org/calculate-inflation-price-jsonp?
 
 export default class API {
 
-  static calculateInflation = ({ country = 'india', start, end, amount }) => {
+  static calculateInflation = ({ country = 'united-states', start, end, amount }, setInflatedAmount) => {
     $.getJSON(inflationURL, { country, start, end, amount, format: true })
-      .done(data => console.log(data));
+      .done(data => setInflatedAmount(data));
   }
 
 }
