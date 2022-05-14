@@ -1,6 +1,6 @@
 import './App.css';
-import WorthBox from './components/WorthBox';
 import Navbar from './components/Navbar';
+import WorthBox from './components/WorthBox';
 
 function App() {
   return (

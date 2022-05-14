@@ -4,9 +4,9 @@ function Navbar() {
     return (
         <div className="Navbar">
             <header>
-            
-            <img src={wtw} className='logo' />
-            
+
+                <img src={wtw} className='logo' />
+
             </header>
         </div>
     );
