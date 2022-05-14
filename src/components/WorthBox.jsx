@@ -7,7 +7,7 @@ import API from '../services/inflation';
 const contentStyle = {
   height: '350px',
   width: '500px',
-  lineHeight: '120px',
+  lineHeight: '100px',
   textAlign: 'center',
   background: '#A79AD5',
 };
@@ -67,8 +67,8 @@ function WorthBox() {
         </div>
         <div>
           <div style={contentStyle}>
-            <h1 className='Questions'>Worth money...</h1> 
-            <h3 className='Questions'>{inflatedAmount}</h3>
+            <h3 className='Questions'><span>{amount}</span> of <span>{startYear}</span>, in <span>{endYear}</span> worths</h3> 
+            <h3 danger className='Questions' style={{ fontSize: '50px', color: '#8BDB81'}}>{inflatedAmount}</h3>
           </div>
         </div>
       </Carousel>
