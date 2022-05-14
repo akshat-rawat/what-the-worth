@@ -70,4 +70,7 @@ input[type=number] {
 
 .slick-list {
     border-radius: 7%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #CCEEFC;
 }

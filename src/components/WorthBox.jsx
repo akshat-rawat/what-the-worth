@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
 import 'antd/dist/antd.css';
-import { Carousel } from 'antd';
+import { Carousel, Skeleton } from 'antd';
 import API from '../services/inflation';
 
 
@@ -16,7 +16,7 @@ function WorthBox() {
   const [amount, setAmount] = useState('25000');
   const [startYear, setStartYear] = useState('1980');
   const [endYear, setEndYear] = useState('2022');
-  const [inflatedAmount, setInflatedAmount] = useState();
+  const [inflatedAmount, setInflatedAmount] = useState('');
 
   const sliderRef = useRef();
   const amountRef = useRef();
@@ -49,7 +49,7 @@ function WorthBox() {
       <Carousel className="Carousel" effect="fade" ref={sliderRef} >
         <div>
           <div style={contentStyle} className="Input">
-            <h3 className='Questions'>How much money we're talking here?</h3>
+            <h3 className='Questions'>How much money we talking here?</h3>
             <input ref={amountRef} id="amountField" type="number" className="WorthInput" onKeyDown={handleKeyDown} onChange={event => handleChange(event, setAmount)} value={amount} />
           </div>
         </div>
@@ -67,8 +67,8 @@ function WorthBox() {
         </div>
         <div>
           <div style={contentStyle}>
-            <h3 className='Questions'><span>{amount}</span> of <span>{startYear}</span>, in <span>{endYear}</span> worths</h3> 
-            <h3 danger className='Questions' style={{ fontSize: '50px', color: '#8BDB81'}}>{inflatedAmount}</h3>
+            <h3 className='Questions'><span>{amount}</span> of <span>{startYear}</span>, in <span>{endYear}</span> is worth</h3> 
+            {inflatedAmount === '' ? <Skeleton.Input className='Questions' active /> : <h3 danger className='Questions' style={{ fontSize: '50px', color: '#8BDB81'}}>{inflatedAmount}</h3>}
           </div>
         </div>
       </Carousel>
