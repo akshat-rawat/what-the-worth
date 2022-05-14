@@ -6,7 +6,7 @@
 .WorthBox {
     position: relative;
     top: 150px;
-    height: 28rem;
+    height: 25rem; 
     background-color: #f6e4d6;
 }
 
@@ -25,6 +25,9 @@
     border-radius: 25px;
     padding: 20px;
     text-align: center;
+    position: relative;
+    top: 10px;
+    background-color: #E7DDDC;
 }
 
 .Navbar {
@@ -40,6 +43,15 @@
     position: relative;
     top: -110px;
     padding-top: 0px;
+}
+
+.Questions {
+    color: white;
+    text-shadow: 2px 2px black;
+    position: relative;
+    top: 25px;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 input::-webkit-outer-spin-button,

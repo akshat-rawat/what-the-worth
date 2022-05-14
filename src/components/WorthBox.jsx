@@ -9,7 +9,7 @@ const contentStyle = {
   width: '500px',
   lineHeight: '120px',
   textAlign: 'center',
-  background: '#247881',
+  background: '#A79AD5',
 };
 
 function WorthBox() {
@@ -67,7 +67,7 @@ function WorthBox() {
         </div>
         <div>
           <div style={contentStyle}>
-            <h1>{inflatedAmount}</h1>
+            <h1 className='Questions'>{inflatedAmount}</h1>
           </div>
         </div>
       </Carousel>
