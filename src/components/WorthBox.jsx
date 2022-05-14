@@ -49,25 +49,26 @@ function WorthBox() {
       <Carousel className="Carousel" effect="fade" ref={sliderRef} >
         <div>
           <div style={contentStyle} className="Input">
-            <h3>How much money we're talking here?</h3>
+            <h3 className='Questions'>How much money we're talking here?</h3>
             <input ref={amountRef} id="amountField" type="number" className="WorthInput" onKeyDown={handleKeyDown} onChange={event => handleChange(event, setAmount)} value={amount} />
           </div>
         </div>
         <div>
           <div style={contentStyle}>
-            <h3>...and in which year?</h3>
+            <h3 className='Questions'>...and in which year?</h3>
             <input ref={startYearRef} id="startYearField" type="number" className="WorthInput" onKeyDown={handleKeyDown} onChange={event => handleChange(event, setStartYear)} value={startYear} />
           </div>
         </div>
         <div>
           <div style={contentStyle}>
-            <h3>Find it's worth in year...</h3>
+            <h3 className='Questions'>Find it's worth in year...</h3>
             <input ref={endYearRef} id="endYearField" type="number" className="WorthInput" onKeyDown={handleKeyDown} onChange={event => handleChange(event, setEndYear)} value={endYear} />
           </div>
         </div>
         <div>
           <div style={contentStyle}>
-            <h1 className='Questions'>{inflatedAmount}</h1>
+            <h1 className='Questions'>Worth money...</h1> 
+            <h3 className='Questions'>{inflatedAmount}</h3>
           </div>
         </div>
       </Carousel>
