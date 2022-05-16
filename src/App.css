@@ -5,14 +5,15 @@
 
 .WorthBox {
     position: relative;
-    top: 120px;
+    top: 100px;
     height: 25rem; 
     background-color: #f6e4d6;
+    
 }
 
 .Carousel {
     position: relative;
-    left: 20%;
+    left: 31%;
     top: 50%;
     height: 50%;
     width: 500px;
